@@ -145,26 +145,28 @@ public class RadioTest {
     }
 
     @Test
-    public void TestsetCurrentStationLessThanZero() {
+    public void TestSetCurrentStationLessThanZero() {
         Radio radio = new Radio();
-        radio.setCurrentVolume(-1);
+        radio.setCurrentStation(-1);
 
+        radio.getCurrentStation();
 
         int expected = 0;
-        int actual = radio.getCurrentStation();
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, radio.getCurrentStation());
 
     }
 
     @Test
-    public void TestsetCurrentStationMoreThanNine() {
+    public void TestSetCurrentStationMoreThanNine() {
         Radio radio = new Radio();
-        radio.setCurrentVolume(12);
+        radio.setCurrentStation(10);
+
+        radio.getCurrentStation();
 
         int expected = 0;
-        int actual = radio.getCurrentStation();
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, radio.getCurrentStation());
+
     }
 }
