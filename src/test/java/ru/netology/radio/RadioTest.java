@@ -132,7 +132,7 @@ public class RadioTest {
     @Test
     public void TestSetCurrentVolumeMoreThanTen() {
         Radio radio = new Radio();
-        radio.setCurrentVolume(11);
+        radio.setCurrentVolume(12);
 
         radio.getCurrentVolume();
 
@@ -161,7 +161,7 @@ public class RadioTest {
     @Test
     public void TestsetCurrentStationMoreThanTen() {
         Radio radio = new Radio();
-        radio.setCurrentVolume(11);
+        radio.setCurrentVolume(12);
 
         radio.getCurrentStation();
 
