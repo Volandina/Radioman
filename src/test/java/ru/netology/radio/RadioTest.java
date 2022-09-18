@@ -149,7 +149,6 @@ public class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentVolume(-1);
 
-        radio.getCurrentStation();
 
         int expected = 0;
         int actual = radio.getCurrentStation();
@@ -159,11 +158,9 @@ public class RadioTest {
     }
 
     @Test
-    public void TestsetCurrentStationMoreThanTen() {
+    public void TestsetCurrentStationMoreThanNine() {
         Radio radio = new Radio();
         radio.setCurrentVolume(12);
-
-        radio.getCurrentStation();
 
         int expected = 0;
         int actual = radio.getCurrentStation();
